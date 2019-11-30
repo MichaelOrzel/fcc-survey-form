@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header class="header">
+      <h1 id="title" class="center-text">Fighting Game Survey Form</h1>
+      <p id="description" class="center-text">
+        To create a better experience for all fighting game fans
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <!--Start Personal Info Section-->
+        <section class="form-section" id="personal-info">
+          <header class="header">
+            <h2 id="sub-title1">Personal Information</h2>
+          </header>
+          <div class="form-group">
+            <label id="name-label" for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="*Enter your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="tag-label" for="tag">Tag:</label>
+            <input
+               type="text"
+               name="tag"
+               id="tag"
+               class="form-control"
+               placeholder="Enter your Tag"
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Age:</label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              class="form-control"
+              min="5"
+              max="99"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="*Enter your Email"
+              required
+            />
+          </div>
+        </section>
+        
+        <!--Past Experience Section-->
+        <section class="form-section" id="past-experience">
+          <header class="header">
+            <h2 id="sub-title2">Past Experience</h2>
+          </header>
+          <div class="form-group">
+            <label id="dropdown-label" for="dropdown">
+              How long have you been playing FG's?
+            </label>
+            <select id="dropdown" name="years-playing" class="form-control" required>
+              <option disabled selected value>Years playing</option>
+              <option value="Less Than One">>1</option>
+              <option value="One To Three">1-3</option>
+              <option value="Three To Five">3-5</option>
+              <option value="Five To Nine">5-9</option>
+              <option value="Ten Or More">10+</option>
+            </select>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
