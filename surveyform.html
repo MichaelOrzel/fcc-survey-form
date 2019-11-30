@@ -6,12 +6,46 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <header>
-      <h1>Survey Form</h1>
+    <header class="header">
+      <h1 id="title" class="center-text">Fighting Game Survey Form</h1>
     </header>
     <main>
-      <form>
-        
+      <form id="fg-survey-form">
+        <section class="form-group" id="personal-info">
+          <header>
+            <h2 id="sub-title">Personal Information</h2>
+            <label id="name-label" for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="*Enter your Name"
+              required
+            />
+            <label id="age-label" for="age">Age:</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              class="form-control"
+              min="5"
+              max="99"
+            />
+            <label id="email-label" for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="*Enter your Email"
+              required
+            />
+          </header>
+        </section>
+        <section>
+          
+        </section>
       </form>
     </main>
   </body>
