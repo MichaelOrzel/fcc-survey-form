@@ -8,12 +8,17 @@
   <body>
     <header class="header">
       <h1 id="title" class="center-text">Fighting Game Survey Form</h1>
+      <p id="description" class="center-text">
+        To create a better experience for all fighting game fans
+      </p>
     </header>
     <main>
-      <form id="fg-survey-form">
-        <section class="form-group" id="personal-info">
+      <form id="survey-form">
+        <section class="form-section" id="personal-info">
           <header>
             <h2 id="sub-title">Personal Information</h2>
+          </header>
+          <div class="form-group">
             <label id="name-label" for="name">Name:</label>
             <input
               type="text"
@@ -23,15 +28,30 @@
               placeholder="*Enter your Name"
               required
             />
-            <label id="age-label" for="age">Age:</label>
+          </div>
+          <div class="form-group">
+            <label id="tag-label" for="tag">Tag:</label>
+            <input
+               type="text"
+               name="tag"
+               id="tag"
+               class="form-control"
+               placeholder="Enter your Tag"
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Age:</label>
             <input
               type="number"
               name="age"
-              id="age"
+              id="number"
               class="form-control"
               min="5"
               max="99"
+              placeholder="Age"
             />
+          </div>
+          <div>
             <label id="email-label" for="email">Email:</label>
             <input
               type="email"
@@ -41,10 +61,15 @@
               placeholder="*Enter your Email"
               required
             />
-          </header>
+          </div>
         </section>
-        <section>
-          
+        <section class="form-section">
+          <header>
+            <h2>Past Experience</h2>
+          </header>
+          <div>
+            
+          </div>
         </section>
       </form>
     </main>
