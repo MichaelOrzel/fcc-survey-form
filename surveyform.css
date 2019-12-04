@@ -1,0 +1,26 @@
+:root {
+  --color-white: #f3f3f3;
+}
+
+body {
+  font-family: verdana, arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: white;
+  background-color: #9F92C8;
+  margin: 0;
+}
+
+/* Form */
+
+form {
+  background: #3B2975;
+  padding: 2.5rem;
+  border-radius: 0.3rem;
+  width: 50%;
+}
+
+.form-control {
+  width: 100%;
+}
