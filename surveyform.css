@@ -1,0 +1,151 @@
+:root {
+  --color-black: #000;
+  --color-white: #FFF;
+  --color-gray: #525252;
+  --color-cream: #FFFDD0;
+  --color-dark-cream: #FFF39A;
+}
+
+body {
+  font-family: verdana, arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-white);
+  background-color: var(--color-gray);
+  margin: 0;
+}
+
+main {
+  display: block;
+  text-align: center;
+}
+
+h1 {
+  line-height: 1.5;
+  margin-bottom: -15px;
+}
+
+h2 {
+  color: var(--color-dark-cream);
+}
+
+button {
+  border: none;
+}
+
+.center-text {
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+#description {
+  margin-bottom: 30px;
+  font-weight: 200;
+}
+
+#name {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#tag {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#number {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#email {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#dropdown {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Form */
+
+form {
+  display: inline-block;
+  text-align: left;
+  background: var(--color-black);
+  padding: 2.5rem;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  width: 50vw;
+}
+
+.form-group {
+  margin: 0px auto 0px auto;
+  padding: 0px 30px 20px 20px;
+}
+
+.form-control {
+  width: 100%;
+  border-color: var(--color-cream);
+  border-radius: 3px;
+  outline: 0;
+  transition:  0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem var(--color-gray);
+}
+
+.fieldset-box {
+  border-color: var(--color-dark-cream);
+  margin-bottom: 20px;
+}
+
+.input-checkbox,
+.input-radio {
+  margin: 10px;
+}
+
+.input-textarea {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  padding-bottom: 70px;
+  border-radius: 3px;
+  border-color: var(--color-cream);
+  outline: 0;
+  transition:  0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-textarea:focus {
+  box-shadow: 0 0 0 0.2rem var(--color-gray);
+}
+
+.submit-button {
+  display: inline-block;
+  width: 100%;
+  background: var(--color-dark-cream);
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media(max-width: 960px) {
+  form {
+    width: 60vw;
+  }
+}
+
+@media(max-width: 760px) {
+  form {
+    width: 70%;
+  }
+}
+
+@media(max-width: 560px) {
+  form {
+    width: 80%;
+  }
+}
