@@ -6,17 +6,17 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <header class="header">
+    <header>
       <h1 id="title" class="center-text">Fighting Game Survey Form</h1>
       <p id="description" class="center-text">
-        To create a better experience for all fighting game fans
+        Thank you for helping us better fighting games.
       </p>
     </header>
     <main>
       <form id="survey-form">
         <!--Start Personal Info Section-->
         <section class="form-section" id="personal-info">
-          <header class="header">
+          <header class="sub-header">
             <h2 id="sub-title1">Personal Information</h2>
           </header>
           <div class="form-group">
@@ -67,20 +67,20 @@
         
         <!--Past Experience Section-->
         <section class="form-section" id="past-experience">
-          <header class="header">
+          <header class="sub-header">
             <h2 id="sub-title2">Past Experience</h2>
           </header>
           <div class="form-group">
             <label id="dropdown-label" for="dropdown">
-              How long have you been playing FG's?
+              What's your relationship with fighting games?
             </label>
             <select id="dropdown" name="years-playing" class="form-control" required>
-              <option disabled selected value>Years playing</option>
-              <option value="Less Than One">>1</option>
-              <option value="One To Three">1-3</option>
-              <option value="Three To Five">3-5</option>
-              <option value="Five To Nine">5-9</option>
-              <option value="Ten Or More">10+</option>
+              <option disabled selected value>Relationship</option>
+              <option value="Spectator">Spectator</option>
+              <option value="Casual">Casual</option>
+              <option value="Kind of Competetive">Kind of Competetive</option>
+              <option value="Competetive">Competetive</option>
+              <option value="Very Competetive">Very Competetive</option>
             </select>
           </div>
           <fieldset class="fieldset-box" id="games-played">
@@ -255,7 +255,7 @@
         
         <!--Start User Feedback Section-->
         <section class="form-section" id="user-feedback">
-          <header class="header">
+          <header class="sub-header">
             <h2 id="sub-title3">User Feedback</h2>
           </header>
           <fieldset class="fieldset-box" id="rollback-netcode">
@@ -296,7 +296,7 @@
           </fieldset>
           <div class="form-group">
             <label id="comments=label" for="comments">
-              What specifically would you want to improve FG's?
+              What should be improved?
             </label>
             <textarea
               id="comments"
