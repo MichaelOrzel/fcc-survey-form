@@ -1,9 +1,15 @@
 :root {
+  font-size: 1rem;
   --color-black: #000;
   --color-white: #FFF;
   --color-gray: #525252;
   --color-cream: #FFFDD0;
   --color-dark-cream: #FFF39A;
+}
+
+::selection {
+  background: var(--color-dark-cream);
+  color: var(--color-black);
 }
 
 body {
@@ -23,7 +29,7 @@ main {
 
 h1 {
   line-height: 1.5;
-  margin-bottom: -15px;
+  margin-bottom: -0.937rem;
 }
 
 h2 {
@@ -40,33 +46,33 @@ button {
 }
 
 #description {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   font-weight: 200;
 }
 
 #name {
-  padding: 10px;
-  margin-top: 10px;
+  padding: 0.625rem;
+  margin-top: 0.625rem;
 }
 
 #tag {
-  padding: 10px;
-  margin-top: 10px;
+  padding: 0.625rem;
+  margin-top: 0.625rem;
 }
 
 #number {
-  padding: 10px;
-  margin-top: 10px;
+  padding: 0.625rem;
+  margin-top: 0.625rem;
 }
 
 #email {
-  padding: 10px;
-  margin-top: 10px;
+  padding: 0.625rem;
+  margin-top: 0.625rem;
 }
 
 #dropdown {
-  padding: 10px;
-  margin-top: 10px;
+  padding: 0.625rem;
+  margin-top: 0.625rem;
 }
 
 /* --- Form --- */
@@ -76,15 +82,15 @@ form {
   text-align: left;
   background: var(--color-black);
   padding: 2.5rem;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 0.9375rem;
+  padding-bottom: 1.25rem;
   border-radius: 5px;
   width: 50vw;
 }
 
 .form-group {
   margin: 0px auto 0px auto;
-  padding: 0px 30px 20px 20px;
+  padding: 0px 1.875rem 1.25rem 1.25rem;
 }
 
 .form-control {
@@ -127,7 +133,7 @@ form {
   display: inline-block;
   width: 100%;
   background: var(--color-dark-cream);
-  padding: 10px;
+  padding: 0.625rem;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -135,7 +141,7 @@ form {
 /* --- Media Queries --- */
 
 /* phone screen size */
-@media(max-width: 768px) {
+@media(max-width: 48rem) {
   body {
     font-size: 100%;
   }
@@ -145,7 +151,7 @@ form {
 }
 
 /* tablet screen size */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   body {
     font-size: 112.5%;
   }
@@ -155,7 +161,7 @@ form {
 }
 
 /* desktop screen size */
-@media(min-width: 1024px) {
+@media(min-width: 64rem) {
   body {
     font-size: 125%;
   }
