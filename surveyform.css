@@ -14,7 +14,6 @@
 
 body {
   font-family: verdana, arial, sans-serif;
-  font-size: 100%;
   line-height: 1.5;
   font-weight: 400;
   color: var(--color-white);
@@ -143,7 +142,7 @@ form {
 /* phone screen size */
 @media(max-width: 48rem) {
   body {
-    font-size: 100%;
+    font-size: 1rem;
   }
   form {
     width: 75vw;
@@ -153,7 +152,7 @@ form {
 /* tablet screen size */
 @media (min-width: 48rem) {
   body {
-    font-size: 112.5%;
+    font-size: 1.125rem;
   }
   form {
     width: 60vw;
@@ -163,7 +162,7 @@ form {
 /* desktop screen size */
 @media(min-width: 64rem) {
   body {
-    font-size: 125%;
+    font-size: 1.25rem;
   }
   form {
     width: 50vw;
