@@ -8,7 +8,7 @@
 
 body {
   font-family: verdana, arial, sans-serif;
-  font-size: 20px;
+  font-size: 100%;
   line-height: 1.5;
   font-weight: 400;
   color: var(--color-white);
@@ -69,7 +69,7 @@ button {
   margin-top: 10px;
 }
 
-/* Form */
+/* --- Form --- */
 
 form {
   display: inline-block;
@@ -132,20 +132,34 @@ form {
   cursor: pointer;
 }
 
-@media(max-width: 960px) {
+/* --- Media Queries --- */
+
+/* phone screen size */
+@media(max-width: 768px) {
+  body {
+    font-size: 100%;
+  }
+  form {
+    width: 75vw;
+  }
+}
+
+/* tablet screen size */
+@media (min-width: 768px) {
+  body {
+    font-size: 112.5%;
+  }
   form {
     width: 60vw;
   }
 }
 
-@media(max-width: 760px) {
-  form {
-    width: 70%;
+/* desktop screen size */
+@media(min-width: 1024px) {
+  body {
+    font-size: 125%;
   }
-}
-
-@media(max-width: 560px) {
   form {
-    width: 80%;
+    width: 50vw;
   }
 }
